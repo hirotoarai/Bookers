@@ -1,0 +1,6 @@
+<h2>タイトル</h2>
+<p><%= @blogs.title %></p>
+<h2>本文</h2>
+<p><%= @blogs.body %></p>
+<%= link_to "編集", edit_blog_path(@Blog.id) %>
+<%= link_to "削除", destroy_blog_path(@Blog.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>
