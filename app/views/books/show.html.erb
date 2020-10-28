@@ -1,0 +1,17 @@
+<html>
+<body>
+     <%=  notice %>
+    <section class="title">
+        Title:
+        <%= @book.title %>
+    </section>
+        
+    <section class="Body">
+        Body:
+        <%= @book.body %>
+    </section>
+    
+        <%= link_to "Edit", edit_book_path(@book) %> | <%= link_to 'Back', 'https://349661cf6c4841c481914cff6b3c8ba8.vfs.cloud9.us-east-1.amazonaws.com/books' %>
+
+</body>
+</html>
